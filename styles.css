@@ -1,0 +1,69 @@
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+     }
+
+     h2 {
+        background-color: #ff6600;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+      }
+    
+legend {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+      }
+
+fieldset {
+        background-color: lightsalmon;
+      }
+
+/* Add styles to 'label' selector */
+label, p {
+    font-size: 1.25em;
+    margin-left: 12px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #d6d6d6;
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+/* Styling the submit button */
+button[type=submit] {
+    background: #07d600;
+    margin: 0 auto;
+    outline: 0;
+    color: black;
+    border: 0;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: all ease-in-out 0.2s;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Add styles for 'focus' property */
+button[type=submit]:focus {
+    background: #c2f0c4;
+    color: rgba(233, 233, 233, 0.808);
+}
+
+/* Style 'hover' property */
+button[type=submit]:hover {
+    background: #5cb3fa;
+}
+
+/* Align items to the centre of the 'div' with the class 'centre' */
+.center {
+    text-align: center;
+    padding: 30px;
+}

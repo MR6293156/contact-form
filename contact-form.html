@@ -4,34 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h2>Contact Us</h2>
     <form id="contact-us form">
-        <fieldset>
-            <legend>Contact Form Details</legend>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name..." required>
-            <label for="email">Email: </label>
-            <input type="text" id="email" name="email" placeholder="Enter your email, e.g., jade104@outlook.com">
-            <label for="phone-number">Phone Number: </label>
-            <input type="text" id="phone" name="phone" placeholder="Enter your phone number">      
-            <select name="query-type" id="query">
-            <option value="General">General</option>
-            <option value="General">Support</option>
-            <option value="General">Sales</option>
-          </select>
-            <label for="message">Message: </label>
-            <textarea type="text" id="message" name="message" rows="4" placeholder="Enter your message..."></textarea>
-            </label>
-            <p>Preferred Contact Method</p>
-            <label>
-              <input name="contact-method" value="email" type="radio" class="input-radio">Email</label>
-              <input name="contact-method" value="phone" type="radio" class="input-radio">Phone</label>
-              <input name="contact-method" value="letter" type="radio" class="input-radio">Letter</label>
-            </label>
-            <button type="submit">Submit</button>
-        </fieldset>
+      <fieldset>
+        <legend>Contact Form Details</legend>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name..."
+          required
+        />
+        <label for="email">Email: </label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Enter your email, e.g., jade104@outlook.com"
+        />
+        <label for="phone-number">Phone Number: </label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phone number"
+        />
+        <label for="query-type">Query Type:</label>
+        <select name="query-type" id="query">
+          <option value="General">General</option>
+          <option value="General">Support</option>
+          <option value="General">Sales</option>
+        </select>
+        <label for="message">Message: </label>
+        <textarea
+          type="text"
+          id="message"
+          name="message"
+          cols="25"
+          rows="10"
+          placeholder="Enter your message..."
+        ></textarea>
+        <p>Preferred Contact Method:</p>
+        <input
+          name="contact-method"
+          value="email"
+          type="radio"
+          class="input-radio"
+        />Email
+        <input
+          name="contact-method"
+          value="phone"
+          type="radio"
+          class="input-radio"
+        />Phone
+        <input
+          name="contact-method"
+          value="both"
+          type="radio"
+          class="input-radio"
+        />Both
+        <div class="center">
+          <button type="submit">Send</button>
+        </div>
+      </fieldset>
     </form>
   </body>
 </html>
